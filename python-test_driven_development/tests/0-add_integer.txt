@@ -6,7 +6,7 @@ Using ``add_integer``
 
 Import the function:
 
->>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer = __import__('add_integer_3').add_integer
 
 Basic addition:
 
