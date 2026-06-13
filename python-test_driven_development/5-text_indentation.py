@@ -20,12 +20,13 @@ def text_indentation(text):
             skip_space = True
 
         elif char == " " and skip_space:
-            pass
+            i += 1
+            continue
 
         else:
-            if skip_space:
-                skip_space = False
+            skip_space = False
             print(char, end="")
 
         i += 1
 
+    print()
