@@ -28,5 +28,3 @@ def text_indentation(text):
             print(char, end="")
 
         i += 1
-
-    print()
