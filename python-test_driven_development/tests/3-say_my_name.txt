@@ -1,0 +1,46 @@
+===============================
+3. Say my name module
+===============================
+
+Import module:
+==============
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+
+Section // Basic usage
+======================
+
+Test case #0: First and last name
+
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+
+
+Test case #1: First name only (default last name)
+
+    >>> say_my_name("Bob")
+    My name is Bob 
+
+
+Test case #2: Different names
+
+    >>> say_my_name("Walter", "White")
+    My name is Walter White
+
+
+Section // Validation
+=====================
+
+Test case #3: first_name not a string
+
+    >>> say_my_name(12, "White")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+
+Test case #4: last_name not a string
+
+    >>> say_my_name("John", 12)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
