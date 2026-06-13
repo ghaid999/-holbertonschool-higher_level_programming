@@ -1,0 +1,50 @@
+===============================
+5. Text indentation module
+===============================
+
+Import module:
+==============
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+Section // Basic usage
+======================
+
+Test case #0: normal paragraph
+
+    >>> text_indentation("Hello. How are you? I'm fine: thanks.")
+    Hello.
+    <
+    How are you?
+    <
+    I'm fine:
+    <
+    thanks.
+
+
+Section // Validation
+=====================
+
+Test case #1: text is not string
+
+    >>> text_indentation(12)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+
+Test case #2: text is None
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+
+Section // Missing arguments
+============================
+
+Test case #3: missing argument
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
