@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""g Fish, Bird and FlyingFish classes."""
+"""Fish, Bird and FlyingFish classes."""
 
 
 class Fish:
