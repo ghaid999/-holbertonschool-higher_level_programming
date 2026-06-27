@@ -3,27 +3,26 @@
 
 
 class VerboseList(list):
-    """List class"""
+    """List class."""
 
     def append(self, item):
-      """append method """
-        super().append(item)
+        """Append method."""
         print(f"Added [{item}] to the list.")
+        super().append(item)
 
     def extend(self, items):
-      """extend method """
+        """Extend method."""
         count = len(items)
-        super().extend(items)
         print(f"Extended the list with [{count}] items.")
+        super().extend(items)
 
     def remove(self, item):
-      """remove method """
+        """Remove method."""
         print(f"Removed [{item}] from the list.")
         super().remove(item)
 
     def pop(self, index=-1):
-      """pop method """
+        """Pop method."""
         item = self[index]
-        super().pop(index)
         print(f"Popped [{item}] from the list.")
-        return item
+        return super().pop(index)
